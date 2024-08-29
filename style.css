@@ -1,0 +1,337 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Hitam transparan */
+    color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.aplikasi {
+    display: flex;
+    align-items: center;
+    /* border: solid 1px #333; */
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.aplikasi .icon {
+    flex: 0 0 50px;
+    margin-right: 20px;
+}
+
+.aplikasi .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.aplikasi.description {
+    flex: 1;
+    
+}
+
+.aplikasi h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.aplikasi p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Menambahkan overlay hitam transparan untuk meningkatkan kontras teks */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Teks logo berwarna putih */
+    margin-right: 30rem;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff; /* Teks link berwarna putih */
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+    background: #f39c12;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9); /* Hitam transparan */
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 8px 12px;
+    white-space: nowrap;
+    color: #fff; /* Teks dropdown berwarna putih */
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #fff; /* Warna burger menu putih */
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+.home {
+    height: 80vh;
+    background: url('img/gmbar1.jpg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+button {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e67e22;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.layanan, .services, .klien {
+    background: #f4f4f4;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 23%; /* Disesuaikan untuk tampilan lebih rapi */
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100px; /* Ukuran gambar yang lebih kecil */
+    height: 100px; /* Ukuran gambar yang lebih kecil */
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px; /* Ukuran teks lebih kecil */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.klien form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.klien form input, .klien form textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 4px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.active .line2 {
+        opacity: 0;
+    }
+
+    .burger.active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .card {
+        width: 45%; /* Ukuran kartu untuk tampilan lebih kecil */
+    }
+
+    .card img {
+        width: 80px; /* Ukuran gambar lebih kecil untuk tampilan mobile */
+        height: 80px; /* Ukuran gambar lebih kecil untuk tampilan mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%; /* Ukuran kartu untuk tampilan paling kecil */
+    }
+
+    .card img {
+        width: 60px; /* Ukuran gambar lebih kecil untuk tampilan mobile */
+        height: 60px; /* Ukuran gambar lebih kecil untuk tampilan mobile */
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between; /* Mengatur jarak antara elemen dalam footer */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 20px;
+    background-color: #f8f9fa; /* Ganti sesuai dengan warna background yang diinginkan */
+}
+
+.contact,
+.address,
+.logo {
+    flex: 1;
+}
+
+.contact {
+    text-align: left;
+}
+
+.address {
+    text-align: center;
+}
+
+.logo {
+    text-align: right;
+}
+
+.logo img {
+    max-width: 150px; /* Sesuaikan ukuran logo */
+}
